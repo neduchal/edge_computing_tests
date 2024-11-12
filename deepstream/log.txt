@@ -1,0 +1,23 @@
+Pridan src pad nvinfer
+Sink pad obtained successfully
+(544, 960, 4)
+video/x-raw, format=(string)BGRx, width=(int)960, height=(int)544, framerate=(fraction)1/1
+Zpracovavam obrazek: /root/archive/screenshot_12524_jpg.rf.a0007d904098f23ee626c345105ebd30.jpg
+(544, 960, 4)
+video/x-raw, format=(string)BGRx, width=(int)960, height=(int)544, framerate=(fraction)1/1
+Zpracovavam obrazek: /root/archive/duque_de_caxias-1410_png_jpg.rf.3c0bc3cdc8804d07543eee7eecc0b8b5.jpg
+(544, 960, 4)
+video/x-raw, format=(string)BGRx, width=(int)960, height=(int)544, framerate=(fraction)1/1
+Zpracovavam obrazek: /root/archive/screenshot_1790_jpg.rf.c5aa52e7f13464df9f29993d6bc54d1d.jpg
+(544, 960, 4)
+video/x-raw, format=(string)BGRx, width=(int)960, height=(int)544, framerate=(fraction)1/1
+Zpracovavam obrazek: /root/archive/ant_sales-10440_png_jpg.rf.ca83fe6066595a1f3ff80757a908d189.jpg
+(544, 960, 4)
+video/x-raw, format=(string)BGRx, width=(int)960, height=(int)544, framerate=(fraction)1/1
+Zpracovavam obrazek: /root/archive/aguanambi-4255_png_jpg.rf.1aaeafcaa45d001401fd35bb2c7788ea.jpg
+BLE
+INFO: ../nvdsinfer/nvdsinfer_model_builder.cpp:610 [Implicit Engine Info]: layers num: 3
+0   INPUT  kFLOAT input_1         3x544x960       
+1   OUTPUT kFLOAT output_bbox/BiasAdd 16x34x60        
+2   OUTPUT kFLOAT output_cov/Sigmoid 4x34x60         
+

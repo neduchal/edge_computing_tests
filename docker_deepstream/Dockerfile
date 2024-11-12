@@ -22,4 +22,8 @@ RUN cd deepstream_python_apps && git checkout v1.1.0
 
 RUN cd deepstream_python_apps && mkdir /opt/nvidia/deepstream/deepstream-6.0/sources/deepstream_python_apps/ && cp -a *  /opt/nvidia/deepstream/deepstream-6.0/sources/deepstream_python_apps/
 
+RUN pip3 install --upgrade pip
+
+RUN pip3 install opencv-python
+
 #RUN cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/tao_pretrained_models/ && ./download_models.sh
