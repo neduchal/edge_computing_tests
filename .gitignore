@@ -2,3 +2,8 @@ modely
 data
 
 *.pyc
+
+*.jpg
+*.txt
+
+tao/
