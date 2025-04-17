@@ -1,0 +1,1 @@
+tao model detectnet_v2 dataset_convert -d /media/neduchal/Data/Projekty/EdgeComputing/edge_computing_tests/tao/specs/detectnet_v2_tfrecords_convert.txt -o /media/neduchal/Data/Projekty/EdgeComputing/edge_computing_tests/tao/data/tfrecords/ -r /media/neduchal/Data/Projekty/EdgeComputing/edge_computing_tests/tao
