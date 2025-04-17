@@ -54,11 +54,11 @@ model = dict(
         pos_weight=-1,
         debug=False),
     test_cfg=dict(
-		nms_pre=2000,
-		min_bbox_size=25,
-		score_thr=0.5,
+		nms_pre=100,
+		min_bbox_size=0,
+		score_thr=0.1,
 		nms=dict(type='nms', iou_threshold=0.65),
-		max_per_img=50),
+		max_per_img=10),
 )
 
 train_pipeline = [

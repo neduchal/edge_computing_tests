@@ -76,7 +76,7 @@ for nms_pre in nms_pre_arr:
                 generateRTMDETconfigFile(nms_pre=nms_pre, min_bbox_size=min_bbox_size, score_thr=score_thr, max_per_img=max_per_img, rtmdet_dir="/mmdetection/configs/rtmdet_edited/")
                 for config_file, checkpoint_file in zip(config_files, checkpoint_files):
                     print("Settings:", nms_pre, min_bbox_size, score_thr, max_per_img, config_file)
-                    model = init_detector(os.path.join(rtmdet_config_dir, config_file), os.path.join(rtmdet_checkpoint_dir, checkpoint_file), device="cuda")        
+                    model = init_detector(os.path.join(rtmdet_config_dir, config_file), os.path.join(rtmdet_checkpoint_dir, checkpoint_file), device="cpu")        
                     times = []
                     for f in files:   
                         images = [cv2.imread(f)]
@@ -86,6 +86,7 @@ for nms_pre in nms_pre_arr:
                         yolo5_pred = convert_yolox_to_yolov5(images[0].shape[1], images[0].shape[0], predictions, 0.5, nms_pre, min_bbox_size, score_thr, max_per_img, config_file, os.path.basename(f), times[-1])
                         for item in yolo5_pred:
                             output_file.write(' '.join(str(e) for e in item.tolist()) + "\n")  
-
+                        print(item.tolist())
+                        exit(0)
 output_file.close()                           
 #print(np.mean(times))
