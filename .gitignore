@@ -7,3 +7,5 @@ data
 *.txt
 
 tao/
+*.engine
+*.pth
